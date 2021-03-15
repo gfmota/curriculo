@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Mota</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="grid-x">
+      <div class="cell medium-3">
+        <div id="side-bar">
+          <img class="me" src="images/me.jpeg">
+          <h1>Gabriel Fernandes Mota</h1>
+          <ul class="no-bullet">
+            <li class="grid-x">
+              <img src="images/localizacao.png" alt="Localização">
+              <p>São Paulo, SP</p>
+            </li>
+            <li class="grid-x">
+              <img src="images/email.png" alt="Email">
+              <p>gabrielfmota134@usp.br</p>
+            </li>
+            <li class="grid-x">
+              <img src="images/github.png" alt="GitHub">
+              <p><a href="https://github.com/gfmota" target="_blank">/gfmota</a></p>
+            </li>
+            <li class="grid-x">
+              <img src="images/linkedin.png" alt="Linkedin">
+              <p><a href="https://www.linkedin.com/in/GabrielFMota" target="_blank">/GabrielFMota</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="medium-1"></div>
+      <div id="main" class="cell medium-8">
+        <div id="sobre">
+          <h1>Sobre mim</h1><hr>
+          <div class="grid-x">
+            <span class="cell medium-6">
+              Tenho 19 anos, sou de São Paulo-SP, nasci em <button onclick="changeMarkerPosition('muriae')" class="place">Muriaé-MG</button>, 
+              aos 15 mudei para <button onclick="changeMarkerPosition('vicosa')" class="place">Viçosa-MG</button>, onde estudei o ensino médio 
+              no CAP-Coluni da UFV, em 2020 passei na Universidade de São Paulo do Butantã, <button onclick="changeMarkerPosition('sp')" class="place">São Paulo-SP</button>, 
+              onde moro desde então, e curso Bacharelado em Ciência da Computação, atualmente no 3º semestre.
+            </span>
+            <div class="medium-6 map-container">
+              <div id="map"></div>
+              <figcaption class="subheader">Clique nas <span class="place">localidades</span> no texto ao lado</figcaption>
+              <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFvH01eJCyEugbcdSArE1NINqQaBLS6bI&callback=initMap&libraries=&v=weekly"
+                async
+              ></script>
+            </div>
+          </div>
+        </div>
+
+        <div id="formacao">
+          <h1>Habilidades e Experiência</h1><hr>
+
+          <div id="python" class="grid-x">
+            <span class="cell medium-6">
+              Domínio sobre <strong>Python</strong> e seu uso junto de <strong>SQL</strong>, 
+              certificado pela University of Michigan no conjunto de cursos <a href="https://www.coursera.org/specializations/python">Python for Everybody</a>, 
+              que cobre desde suas <a href="https://www.coursera.org/learn/python?specialization=python">funções básicas</a> e 
+              <a href="https://www.coursera.org/learn/python-data?specialization=python">estrutura de dados</a>, até 
+              <a href="https://www.coursera.org/learn/python-network-data?specialization=python">acesso a dados da internet</a>, 
+              <a href="https://www.coursera.org/learn/python-databases?specialization=python">uso de banco de dados</a> e 
+              <a herf="https://www.coursera.org/learn/python-data-visualization?specialization=python">visualização desses</a>.
+              <br>
+              Para praticar o que aprendi nesse curso e na graduação de python e dados, desenvolvi um projeto open-source, o 
+              <a href="https://github.com/gfmota/smart-bookcase">SmartBookcase</a>, o qual se encontra no meu GitHub
+            </span>
+            <div class="certificados medium-6 cell grid-x align-center">
+              <div class="small-4">
+                <img src="images/certificados/python_getting_started.png" alt="Getting Started with Python">
+                <figcaption><a href="certificados_pdf/PY4E_1.pdf" target="_blank">Getting Started with Python</a></figcaption>
+              </div>
+              <div class="small-4">
+                <img src="images/certificados/python_data_structures.png" alt="Python Data Structures">
+                <figcaption><a href="certificados_pdf/PY4E_2.pdf" target="_blank">Python Data Structures</a></figcaption>
+              </div>
+              <div class="small-4">
+                <img src="images/certificados/python_access_web_data.png" alt="Using Python to Access Web Data">
+                <figcaption><a href="certificados_pdf/PY4E_3.pdf" target="_blank">Using Python to Access Web Data</a></figcaption>
+              </div>
+              <div class="small-4">
+                <img src="images/certificados/python_databases.png" alt="Using Databases with Python">
+                <figcaption><a href="certificados_pdf/PY4E_4.pdf" target="_blank">Using Databases with Python Data</a></figcaption>
+              </div>
+              <div class="small-4">
+                <img src="images/certificados/python_capstone.png" alt="Retrieving, Processing, and Visualizing Data with Python">
+                <figcaption><a href="certificados_pdf/PY4E_5.pdf" target="_blank">Retrieving, Processing, and Visualizing Data with Python</a></figcaption>
+              </div>
+            </div>
+          </div>
+
+          <div id="webdev" class="grid-x pad">
+            <span class="medium-8">
+              Domínio sobre <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> 
+              certificado pelo Instituto de Matemática e Estatística, IME-USP, no curso WebDev promovido pelo 
+              USPCodeLab.
+              <br>
+              Essa mesma página foi feita só com uso dessas tecnologias e também o framework front-end <strong>Foundation</strong>, 
+              e o código dessa página esta disponível também <a href="https://github.com/gfmota/curriculo">aqui</a>, no meu GitHub.
+            </span>
+            <div class="certificados medium-4 align-self-middle">
+              <img src="images/certificados/webdev.png" alt="WebDev 2020.1">
+              <figcaption><a href="certificados_pdf/webdev.pdf" target="_blank">WebDev 2020.1</a></figcaption>
+            </div>
+          </div>
+
+          <div id="django" class="grid-x pad">
+            <span class="medium-8">
+              Conhecimento básico de <strong>Django</strong>, certificado pela University of Michigan no curso
+              <a href="https://www.coursera.org/learn/django-database-web-apps?specialization=django">Web Application Technologies and Django</a>, 
+              além de interesse em aprender mais e já cursando o restante dos cursos do <a href="https://www.coursera.org/specializations/django">Django for Everybody</a>.
+            </span>
+            <div class="certificados medium-4 align-self-middle">
+              <img src="images/certificados/django_web_app_tec.png" alt="Web Application Technologies and Django">
+              <figcaption><a href="certificados_pdf/DJ4E_1.pdf" target="_blank">Web Application Technologies and Django</a></figcaption>
+            </div>
+          </div>
+
+          <div id="codelab" class="grid-x pad">
+            <span class="medium-8">
+              Ṕarticipo do grupo de extensão do <strong>USPCodeLab</strong> desde o ano passado, o qual tem como 
+              objetivo o estudo de novas tecnologias. Nele, participei do DevBoost, um projeto open-source em grupo 
+              de desenvolvimento web, no qual participei no <a href="https://github.com/jooaodanieel/devboost-backend">back-end</a> 
+              e <a href="https://github.com/jooaodanieel/devboost-frontend">front-end</a>, ambos possuem repositórios abertos no GitHub 
+              e você pode ver as minhas colaborações no meu GitHub.
+            </span>
+            <div class="certificados" class="medium-4 align-self-middle">
+              <img src="images/ucl.png" alt="USPCodeLab logo">
+              <figcaption><a href="https://codelab.ime.usp.br/#/">Saiba mais</a></figcaption>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/foundation.js"></script>
+  </body>
+</html>
