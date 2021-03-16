@@ -1,10 +1,12 @@
 body {
     font-size: medium;
-    margin: 2em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1em;
 }
 
 h1 {
     font-family: 'Bebas Neue';
+    font-size: 2.5em;
     line-height: 1em;
     margin-bottom: 0;
 }
@@ -24,35 +26,39 @@ button:focus{
 
 #side-bar {
     position: fixed;
-    top: 0;
+    top: 2em;
     width: inherit;
-    border: solid 2px rgb(63, 63, 63);
     border-radius: 5px;
     padding: .6em;
     padding-bottom: 0;
-    background-color: rgb(196, 196, 196);
+    background-color: #444545;
+    color: white;
     min-height: none;
+    max-height: 95%;
     margin-left: 1em;
+    font-size: small;
 }
 
 #side-bar .me {
     width: 100%;
-    border: solid 2px rgb(63,63,63);
-    border-radius: 5px;
-    margin-bottom: 5px;
+    padding: .5em;
 }
 
 #side-bar ul li img {
     width: 10%;
     height: 50%;
-    min-height: 2em;
-    min-width: 2em;
+    min-height: 1.5em;
+    min-width: 1.5em;
 }
 
 #side-bar ul li p {
     font-weight: 650;
     padding-top: 2%;
     padding-left: 3%;
+}
+
+#main h1 {
+    margin-top: 1em;
 }
 
 #main {
@@ -83,6 +89,10 @@ hr {
 
 @media (max-width: 640px) {
     #side-bar {
+        width: 90%;
         position: static;
+    }
+    h1 {
+        margin-top: 1em;
     }
 }
