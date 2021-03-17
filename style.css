@@ -1,12 +1,12 @@
 body {
     font-size: medium;
     font-family: 'Montserrat', sans-serif;
-    margin: 1em;
+    margin: 0 3em 2em 3em;
 }
 
 h1 {
     font-family: 'Bebas Neue';
-    font-size: 2.5em;
+    font-size: 3em;
     line-height: 1em;
     margin-bottom: 0;
 }
@@ -26,7 +26,7 @@ button:focus{
 
 #side-bar {
     position: fixed;
-    top: 2em;
+    top: 5em;
     width: inherit;
     border-radius: 5px;
     padding: .6em;
@@ -34,14 +34,7 @@ button:focus{
     background-color: #444545;
     color: white;
     min-height: none;
-    max-height: 99%;
-    margin-left: 1em;
     font-size: small;
-}
-
-#side-bar .me {
-    width: 100%;
-    padding: .5em;
 }
 
 #side-bar ul li img {
@@ -91,7 +84,7 @@ hr {
 }
 
 @media (max-width: 640px) {
-    #side-bar {width: 60%; position: static; margin-left: 0;}
+    #side-bar {position: static; margin-top: 2em;}
     h1 {margin-top: 1em;}
     .map-container {padding: 1.5em 0 0 0;}
     .certificados {padding: 1.5em 0 0 0;}
